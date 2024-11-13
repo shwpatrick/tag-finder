@@ -22,3 +22,6 @@ search_files_with_tags(folder_path, tags)
 
 # 討論紀錄
 
+在使用tag的正則表達式時  
+左邊邊界\b 會使得#符號沒有被正確涵蓋而找不到檔案  
+因此程式中正則表達式rf'{tag}\b'只涵蓋右邊邊界  
